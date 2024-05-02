@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a68448ea58.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/namelogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Information Technology & Leadership</p>
+            <h1>Hi, I'm <span>Cameron,</span><br>Welcome to my online resume.</h1>
+        </div>
+    </div>
+</div>
+<!------------ About----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me:</h1>
+                <p>I am a resourceful professional with expertise in technical support and currently pursuing a Bachelor of Science in Information Technology. 
+                    I am proficient in various operating systems, software, and languages including Microsoft Windows PC, Android, Macintosh, iOS, Office 365, SQL, HTML, CSS, and JavaScript. 
+                    Skilled in customer support, system analysis, and service management. Holds key certifications including CompTIA A+ and ITIL Foundations.</p>
+                     
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Certifications</p>
+                        <p class="tab-links"onclick="opentab('education')">Experience</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>2023-2025</span><br>Bachelors in Information Technology from Western Governors University</li>
+                            <li><span>2020</span><br>Sterile Processing Technictian program at Contra Costa Medical Career College</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CompTIA</span><br>A+</li>
+                            <li><span>ITIL</span><br>Foundations Version 4</li>
+                            <li><span>Google</span><br>IT Support <br>Data Analytics</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2023</span><br>Assistant Manager at Jersey Mike's Subs</li>
+                            <li><span>2021-2022</span><br>Patient Care Technictian at DaVita Dialysis</li>
+                            <li><span>2016-2021</span><br>Shift Leader at Jersey Mike's Subs</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------Services------------>
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills:</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-windows"></i>
+                <h2>Operating Systems</h2>
+                <p>Microsoft Windows PC, Android, Macintosh, and iOS
+         </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Software</h2>
+                <p>Office 365, SSH, PowerShell, Meraki, Apple Remote Desktop
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Languages</h2>
+                <p>SQL, HTML, CSS, Java Script
+            </div>
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <h2>Technical Skills</h2>
+                <p>Customer Support, Mobile Device Management, System Analysis, Technical Assistance, Service Management
+            </div>
+    </div>
+</div>
+<!-------------Reccommendations-------->
+<div id="recommendations">
+    <div class="container">
+        <h1 class="sub-title">Recommendations:</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h1>"Cameron has been one of the hardest working and most dedicated employees that I have seen in my 18 years of working in the food service industry. He is highly driven."</h1>
+                    <br>
+                    <h3>- Efren Ochoa</h3>
+                    <h2>District Manager at Jersey Mike's Subs</h2>
+                    <a href="/images/LetterOfRec.Ochoa.pdf" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h1>"Cameron has my strong endorsement that he would be a fantastic fit within your organization. He has the know-how and skills you want in an applicant. I am confident he will become a vital part of your team just like he has for me."</h1>
+                    <br>
+                    <h3>- Andrew Gregorich</h3>
+                    <h2>Manager at Jersey Mike's Subs</h2>
+                    <a href="/images/Letter of recommendation Gregorich.pdf" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!---Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me:</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>cameronroswell13@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> (209) 814-6479</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/cameron-roswell/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Resume Cameron Roswell.pdf" download class="btn btn2">Download Resume</a>
+         </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"name="Name" placeholder="Your Name" required>
+                    <input type="email"name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy 2024 <br>Made with <i class="fa-solid fa-heart"></i> by Cameron Roswell</p>
+    </div>
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0px";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyi5szZNCK8fLOnI5faKAFIg33zZJ3pepCOe5TM4a38kY_It9Vjh6VV7ODOHv2_e4Na/exechttps://script.google.com/macros/s/AKfycbyi5szZNCK8fLOnI5faKAFIg33zZJ3pepCOe5TM4a38kY_It9Vjh6VV7ODOHv2_e4Na/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
